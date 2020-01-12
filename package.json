@@ -1,7 +1,7 @@
 {
   "name": "taitto",
   "version": "1.0.0",
-  "description": "Compositional SVG drawing and layout library",
+  "description": "SVG drawing and layout library",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
