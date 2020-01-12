@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="109.83302mm"
+   height="109.40043mm"
+   viewBox="0 0 109.83302 109.40042"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="taitto.svg"
+   inkscape:export-filename="C:\Users\johteto\source\repos\taitto\favicon.png"
+   inkscape:export-xdpi="7.4000001"
+   inkscape:export-ydpi="7.4000001">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="221.63935"
+     inkscape:cy="217.78752"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g4531"
+     showgrid="true"
+     inkscape:window-width="1829"
+     inkscape:window-height="1051"
+     inkscape:window-x="82"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     fit-margin-top="13"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="13">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       empspacing="10"
+       spacingx="2.6458333"
+       spacingy="2.6458333"
+       originx="-50.916915"
+       originy="-143.72447" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-50.916922,-43.87505)">
+    <g
+       id="g4531">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path4526"
+         d="m 132.29166,138.25 26.45835,-13.22919 -15.875,-7.9375 z"
+         style="fill:#ac9d93;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 132.29167,138.24998 105.83334,85.333315 52.916675,58.874982 79.375006,111.79165 132.29167,138.24998 158.75001,85.333315 105.83334,58.874982 79.375006,111.79162"
+         id="path4535"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:export-filename="C:\Users\johteto\source\repos\taitto\path4535.png"
+         inkscape:export-xdpi="5.5500002"
+         inkscape:export-ydpi="5.5500002" />
+    </g>
+  </g>
+</svg>

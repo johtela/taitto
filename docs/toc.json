@@ -1,0 +1,102 @@
+[
+    {
+        "page": "index",
+        "file": "index.html",
+        "desc": ""
+    },
+    {
+        "page": "SVG Manipulation",
+        "subs": [
+            {
+                "page": "Overview",
+                "file": "src/svg/index.html",
+                "desc": ""
+            },
+            {
+                "page": "2D Vectors",
+                "file": "src/svg/vector.html",
+                "desc": ""
+            },
+            {
+                "page": "Rectangles",
+                "file": "src/svg/rect.html",
+                "desc": ""
+            },
+            {
+                "page": "Element Wrappers",
+                "file": "src/svg/elem.html",
+                "desc": ""
+            },
+            {
+                "page": "Paths",
+                "file": "src/svg/path.html",
+                "desc": ""
+            },
+            {
+                "page": "Markers",
+                "file": "src/svg/marker.html",
+                "desc": ""
+            },
+            {
+                "page": "Filters",
+                "file": "src/svg/filter.html",
+                "desc": ""
+            },
+            {
+                "page": "Text",
+                "file": "src/svg/text.html",
+                "desc": ""
+            }
+        ]
+    },
+    {
+        "page": "Animations",
+        "subs": [
+            {
+                "page": "Overview",
+                "file": "src/anim/index.html",
+                "desc": ""
+            },
+            {
+                "page": "Wrapper for Animated Elements",
+                "file": "src/anim/animated.html",
+                "desc": ""
+            },
+            {
+                "page": "Animation Sequences",
+                "file": "src/anim/anim.html",
+                "desc": ""
+            },
+            {
+                "page": "Keyframed Animations",
+                "file": "src/anim/keyframe-anim.html",
+                "desc": ""
+            },
+            {
+                "page": "Custom Animations",
+                "file": "src/anim/custom-anim.html",
+                "desc": ""
+            }
+        ]
+    },
+    {
+        "page": "digraph",
+        "file": "src/digraph/digraph.html",
+        "desc": ""
+    },
+    {
+        "page": "file-diagram",
+        "file": "src/file-diagram/file-diagram.html",
+        "desc": ""
+    },
+    {
+        "page": "index",
+        "file": "src/index.html",
+        "desc": ""
+    },
+    {
+        "page": "animated-view",
+        "file": "src/anim/animated-view.html",
+        "desc": ""
+    }
+]

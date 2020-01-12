@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./lib",
+    "module": "commonjs",
+    "target": "es2018",
+    "tsBuildInfoFile": "./lib/tsconfig.tsbuildinfo",
+    "esModuleInterop": true,
+    "incremental": true
+  }
+}

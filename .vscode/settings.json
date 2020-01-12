@@ -1,0 +1,4 @@
+{
+    "svg.preview.background": "white",
+    "typescript.tsdk": "node_modules\\typescript\\lib"
+}

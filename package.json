@@ -1,0 +1,32 @@
+{
+  "name": "taitto",
+  "version": "1.0.0",
+  "description": "Compositional SVG drawing and layout library",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johtela/taitto.git"
+  },
+  "author": "Tommi Johtela",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/johtela/taitto/issues"
+  },
+  "homepage": "https://github.com/johtela/taitto#readme",
+  "dependencies": {
+    "dagre": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/css-font-loading-module": "0.0.2",
+    "@types/dagre": "^0.7.42"
+  },
+  "peerDependencies": {    
+    "typescript": "^3.7.2"
+  }
+}

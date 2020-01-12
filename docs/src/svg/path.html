@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TAITTO - Paths</title>
+    <link rel="icon" type="image/icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/tests.css" />
+    
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navmenu">
+            
+    <a class="title enabled" href="/">
+        <img src="/images/taitto.svg" />
+        <span>TAITTO</span>
+    </a>
+    <a class="enabled" href="https://www.npmjs.com/package/taitto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
+        <span>Download</span>
+    </a>
+    <a class="enabled" href="https://github.com/johtela/taitto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+        <span>GitHub</span>
+    </a>
+    <a class="enabled" href="/License.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 64c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm192.81 248H304c8.84 0 16 7.16 16 16s-7.16 16-16 16h-47.19c-16.45 0-31.27-9.14-38.64-23.86-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34a15.986 15.986 0 0 1-14.31 8.84c-.38 0-.75-.02-1.14-.05-6.45-.45-12-4.75-14.03-10.89L144 354.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.77-16.19 54.05-9.7 66 14.16 2.02 4.06 5.96 6.5 10.16 6.5zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"/></svg>
+        <span>License</span>
+    </a>
+    <a class="enabled" href="/src/svg/elem.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"/></svg>
+        <span>Previous: Element Wrappers</span>
+    </a>
+    <a class="enabled" href="/src/svg/marker.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/></svg>
+        <span>Next: Markers</span>
+    </a>
+        </div>
+        
+    <a class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+    </div>
+    
+    <div class="layout">
+        <div class="sidepane collapsible">
+            
+    <div class="tocmenu">
+        <h3>Table of Contents</h3>
+        
+    <ul>
+        
+    <li>
+        
+        <a href="/index.html">index </a>
+        
+    </li>
+    <li>
+        <button class="accordion">
+        SVG Manipulation
+        </button>
+            
+    <ul>
+        
+    <li>
+        
+        <a href="/src/svg/index.html">Overview </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/svg/vector.html">2D Vectors </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/svg/rect.html">Rectangles </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/svg/elem.html">Element Wrappers </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/svg/path.html" class="highlight">Paths </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/svg/marker.html">Markers </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/svg/filter.html">Filters </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/svg/text.html">Text </a>
+        
+    </li>
+    </ul>
+    </li>
+    <li>
+        <button class="accordion">
+        Animations
+        </button>
+            
+    <ul>
+        
+    <li>
+        
+        <a href="/src/anim/index.html">Overview </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/anim/animated.html">Wrapper for Animated Elements </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/anim/anim.html">Animation Sequences </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/anim/keyframe-anim.html">Keyframed Animations </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/anim/custom-anim.html">Custom Animations </a>
+        
+    </li>
+    </ul>
+    </li>
+    <li>
+        
+        <a href="/src/digraph/digraph.html">digraph </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/file-diagram/file-diagram.html">file-diagram </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/index.html">index </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/anim/animated-view.html">animated-view </a>
+        
+    </li>
+    </ul>
+    </div>
+            
+    <div class="footer">
+        Copyright © 2019 Tommi Johtela
+        <div class="ad">
+            Created with <a href="https://github.com/johtela/literatets">LiTScript</a>
+        </div>
+    </div>
+
+        </div>
+        <div class="sideicon collapsible">
+            
+    <a class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+        </div>
+        <div class="scrollingarea closepopups">
+            
+    <div class="contentarea">
+        <pre class="syntaxhighlight"><code><span class="keyword">export</span> <span class="keyword">class</span> <span id="0" class="typename" data-toggle="tooltip" data-title="MoveTo">MoveTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="39" data-toggle="tooltip" data-title="&quot;M&quot; | &quot;m&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;M&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;m&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="77" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="107" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="140" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#39"><span data-toggle="tooltip" data-title="&quot;M&quot; | &quot;m&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#77"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#107"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="202" class="typename" data-toggle="tooltip" data-title="LineTo">LineTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="245" data-toggle="tooltip" data-title="&quot;L&quot; | &quot;l&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;L&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;l&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="283" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="313" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="346" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#245"><span data-toggle="tooltip" data-title="&quot;L&quot; | &quot;l&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#283"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#313"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="408" class="typename" data-toggle="tooltip" data-title="HLineTo">HLineTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="452" data-toggle="tooltip" data-title="&quot;H&quot; | &quot;h&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;H&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;h&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="490" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="523" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#452"><span data-toggle="tooltip" data-title="&quot;H&quot; | &quot;h&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#490"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="575" class="typename" data-toggle="tooltip" data-title="VLineTo">VLineTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="619" data-toggle="tooltip" data-title="&quot;L&quot; | &quot;l&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;L&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;l&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="657" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="690" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#619"><span data-toggle="tooltip" data-title="&quot;L&quot; | &quot;l&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#657"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="742" class="typename" data-toggle="tooltip" data-title="CubicCurveTo">CubicCurveTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="791" data-toggle="tooltip" data-title="&quot;C&quot; | &quot;c&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;C&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;c&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="829" data-toggle="tooltip" data-title="number">x1</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="860" data-toggle="tooltip" data-title="number">y1</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="891" data-toggle="tooltip" data-title="number">x2</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="922" data-toggle="tooltip" data-title="number">y2</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="953" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="983" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="1016" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#791"><span data-toggle="tooltip" data-title="&quot;C&quot; | &quot;c&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#829"><span data-toggle="tooltip" data-title="number">x1</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#860"><span data-toggle="tooltip" data-title="number">y1</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#891"><span data-toggle="tooltip" data-title="number">x2</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#922"><span data-toggle="tooltip" data-title="number">y2</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#953"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#983"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="1122" class="typename" data-toggle="tooltip" data-title="ContCubicCurveTo">ContCubicCurveTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="1175" data-toggle="tooltip" data-title="&quot;S&quot; | &quot;s&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;S&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;s&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1213" data-toggle="tooltip" data-title="number">x2</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1244" data-toggle="tooltip" data-title="number">y2</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1275" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1305" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="1338" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1175"><span data-toggle="tooltip" data-title="&quot;S&quot; | &quot;s&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1213"><span data-toggle="tooltip" data-title="number">x2</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1244"><span data-toggle="tooltip" data-title="number">y2</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1275"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1305"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="1422" class="typename" data-toggle="tooltip" data-title="QuadCurveTo">QuadCurveTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="1470" data-toggle="tooltip" data-title="&quot;Q&quot; | &quot;q&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;Q&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;q&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1508" data-toggle="tooltip" data-title="number">x1</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1539" data-toggle="tooltip" data-title="number">y1</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1570" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1600" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="1633" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1470"><span data-toggle="tooltip" data-title="&quot;Q&quot; | &quot;q&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1508"><span data-toggle="tooltip" data-title="number">x1</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1539"><span data-toggle="tooltip" data-title="number">y1</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1570"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1600"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="1717" class="typename" data-toggle="tooltip" data-title="ContQuadCurveTo">ContQuadCurveTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="1769" data-toggle="tooltip" data-title="&quot;T&quot; | &quot;t&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;T&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;t&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1807" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="1837" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="1870" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1769"><span data-toggle="tooltip" data-title="&quot;T&quot; | &quot;t&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1807"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#1837"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">enum</span> <span id="1932" data-toggle="tooltip" data-title="Arc">Arc</span> <span class="punctuation">{</span> <span id="1953" data-toggle="tooltip" data-title="Arc.Small">Small</span> <span class="punctuation">=</span> <span class="number">0</span><span class="punctuation">,</span> <span id="1964" data-toggle="tooltip" data-title="Arc.Large">Large</span> <span class="punctuation">=</span> <span class="number">1</span> <span class="punctuation">}</span>
+<span class="keyword">export</span> <span class="keyword">enum</span> <span id="1976" data-toggle="tooltip" data-title="Sweep">Sweep</span> <span class="punctuation">{</span> <span id="1997" data-toggle="tooltip" data-title="Sweep.CW">CW</span> <span class="punctuation">=</span> <span class="number">0</span><span class="punctuation">,</span> <span id="2005" data-toggle="tooltip" data-title="Sweep.CCW">CCW</span> <span class="punctuation">=</span> <span class="number">1</span> <span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="2015" class="typename" data-toggle="tooltip" data-title="ArcTo">ArcTo</span> <span class="punctuation">{</span>
+    <span class="keyword">constructor</span><span class="punctuation">(</span>
+        <span class="keyword">readonly</span> <span id="2057" data-toggle="tooltip" data-title="&quot;A&quot; | &quot;a&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;A&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;a&#039;</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="2095" data-toggle="tooltip" data-title="number">rx</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="2126" data-toggle="tooltip" data-title="number">ry</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span>
+        <span class="keyword">readonly</span> <span id="2157" data-toggle="tooltip" data-title="number">rot</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span>
+        <span class="keyword">readonly</span> <span id="2188" data-toggle="tooltip" data-title="Arc">arc</span><span class="punctuation">:</span> <a href="path.html#1932"><span data-toggle="tooltip" data-title="Arc">Arc</span></a><span class="punctuation">,</span>
+        <span class="keyword">readonly</span> <span id="2216" data-toggle="tooltip" data-title="Sweep">sweep</span><span class="punctuation">:</span> <a href="path.html#1976"><span data-toggle="tooltip" data-title="Sweep">Sweep</span></a><span class="punctuation">,</span>
+        <span class="keyword">readonly</span> <span id="2248" data-toggle="tooltip" data-title="number">x</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">,</span> 
+        <span class="keyword">readonly</span> <span id="2277" data-toggle="tooltip" data-title="number">y</span><span class="punctuation">:</span> <span class="keyword">number</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>
+    <span id="2310" data-toggle="tooltip" data-title="() =&gt; string">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="string">`${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2057"><span data-toggle="tooltip" data-title="&quot;A&quot; | &quot;a&quot;">command</span></a><span class="string">}${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2095"><span data-toggle="tooltip" data-title="number">rx</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2126"><span data-toggle="tooltip" data-title="number">ry</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2157"><span data-toggle="tooltip" data-title="number">rot</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2188"><span data-toggle="tooltip" data-title="Arc">arc</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2216"><span data-toggle="tooltip" data-title="Sweep">sweep</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2248"><span data-toggle="tooltip" data-title="number">x</span></a><span class="string">} ${</span><span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2277"><span data-toggle="tooltip" data-title="number">y</span></a><span class="string">}`</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">class</span> <span id="2432" class="typename" data-toggle="tooltip" data-title="ClosePath">ClosePath</span> <span class="punctuation">{</span>
+    <span class="keyword">readonly</span> <span id="2460" data-toggle="tooltip" data-title="&quot;Z&quot;">command</span><span class="punctuation">:</span> <span class="string">&#039;Z&#039;</span>
+    <span id="2487" data-toggle="tooltip" data-title="() =&gt; &quot;Z&quot;">toString</span> <span class="punctuation">=</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="keyword">this</span><span class="punctuation">.</span><a href="path.html#2460"><span data-toggle="tooltip" data-title="&quot;Z&quot;">command</span></a>
+<span class="punctuation">}</span>
+
+<span class="keyword">export</span> <span class="keyword">type</span> <span id="2525" class="typename" data-toggle="tooltip" data-title="PathCommand">PathCommand</span> <span class="punctuation">=</span> <a href="path.html#0"><span class="typename" data-toggle="tooltip" data-title="MoveTo">MoveTo</span></a> <span class="punctuation">|</span> <a href="path.html#202"><span class="typename" data-toggle="tooltip" data-title="LineTo">LineTo</span></a> <span class="punctuation">|</span> <a href="path.html#408"><span class="typename" data-toggle="tooltip" data-title="HLineTo">HLineTo</span></a> <span class="punctuation">|</span> <a href="path.html#575"><span class="typename" data-toggle="tooltip" data-title="VLineTo">VLineTo</span></a> <span class="punctuation">|</span> <a href="path.html#742"><span class="typename" data-toggle="tooltip" data-title="CubicCurveTo">CubicCurveTo</span></a> <span class="punctuation">|</span> 
+    <a href="path.html#1122"><span class="typename" data-toggle="tooltip" data-title="ContCubicCurveTo">ContCubicCurveTo</span></a> <span class="punctuation">|</span> <a href="path.html#1422"><span class="typename" data-toggle="tooltip" data-title="QuadCurveTo">QuadCurveTo</span></a> <span class="punctuation">|</span> <a href="path.html#1717"><span class="typename" data-toggle="tooltip" data-title="ContQuadCurveTo">ContQuadCurveTo</span></a> <span class="punctuation">|</span> <a href="path.html#2015"><span class="typename" data-toggle="tooltip" data-title="ArcTo">ArcTo</span></a> <span class="punctuation">|</span> <a href="path.html#2432"><span class="typename" data-toggle="tooltip" data-title="ClosePath">ClosePath</span></a>
+</code></pre>
+
+        
+    </div>
+            <div class="stickypane">
+                
+    <div class="pagemenu">
+        <h3>On This Page</h3>
+            <ul class="pagetree">
+                
+            </ul>
+    </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/tests.js"></script>
+<script>
+</script>
+</body>
+</html>

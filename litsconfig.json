@@ -1,0 +1,22 @@
+{
+    "updateToc": true,
+    "files": [ "*.md", "src/file-diagram-mixins.less" ],
+    "exclude": [ "src/tests/**" ],
+    "watch": false,
+    "frontMatter": {
+        "projectName": "TAITTO",
+        "repository": "https://github.com/johtela/taitto",
+        "download": "https://www.npmjs.com/package/taitto",
+        "license": "/License.html",
+        "logo": "/images/taitto.svg",
+        "footer": "Copyright © 2019 Tommi Johtela",
+        "footerLocation": "toc-menu",
+        "syntaxHighlight": "son-of-obsidian",
+        "visualizers": [
+            {
+                "path": "./src/tests/tests.ts",
+                "includeStyles": true
+            }
+        ]
+    }
+}

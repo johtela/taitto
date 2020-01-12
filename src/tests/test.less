@@ -1,0 +1,44 @@
+@import "/styles/taitto.less";
+
+svg.digraph {
+    filter: drop-shadow( 4px 4px 4px #AAA);
+
+    .node:hover{
+        fill: white;
+        stroke: maroon;
+        stroke-dasharray: 4 4;
+        animation: dash-stream 1s linear infinite reverse;
+        cursor: pointer;
+    }
+    text {
+        fill: maroon;
+    }
+}
+@keyframes dash-stream {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: 8; }
+}
+
+svg.file-diagram {
+    filter: drop-shadow(2px 2px 4px #AAA);
+
+    .green {
+        @col: rgb(211, 241, 206);
+        @text: desaturate(darken(@col, 40%), 40%);
+        @hl: darken(@col, 20%);
+        .document-styles(@col, @hl, @text);
+        .folder-styles(@col, @text);
+    }
+
+    .caption, .button {
+        text-anchor: start;
+        font-family: var(--sans-font);
+        font-size: 16px;
+    }
+
+    .button {
+        text-anchor: end;
+        cursor: pointer;
+        fill: #400;
+    }
+}
