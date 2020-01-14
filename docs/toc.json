@@ -98,5 +98,25 @@
         "page": "animated-view",
         "file": "src/anim/animated-view.html",
         "desc": ""
+    },
+    {
+        "page": "digraph",
+        "file": "src/digraph.html",
+        "desc": ""
+    },
+    {
+        "page": "file-diagram",
+        "file": "src/file-diagram.html",
+        "desc": ""
+    },
+    {
+        "page": "license",
+        "file": "license.html",
+        "desc": ""
+    },
+    {
+        "page": "README",
+        "file": "README.html",
+        "desc": ""
     }
 ]

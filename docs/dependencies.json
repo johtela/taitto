@@ -1,74 +1,63 @@
-[
-    {
-        "name": "src/svg/vector",
-        "url": "/src/svg/vector.html",
+{
+    "src/svg/vector": {
+        "url": "src/svg/vector.html",
         "dependencies": []
     },
-    {
-        "name": "src/svg/rect",
-        "url": "/src/svg/rect.html",
+    "src/svg/rect": {
+        "url": "src/svg/rect.html",
         "dependencies": [
             "src/svg/vector"
         ]
     },
-    {
-        "name": "src/svg/path",
-        "url": "/src/svg/path.html",
+    "src/svg/path": {
+        "url": "src/svg/path.html",
         "dependencies": []
     },
-    {
-        "name": "src/svg/elem",
-        "url": "/src/svg/elem.html",
+    "src/svg/elem": {
+        "url": "src/svg/elem.html",
         "dependencies": [
             "src/svg/rect",
             "src/svg/path"
         ]
     },
-    {
-        "name": "src/svg/marker",
-        "url": "/src/svg/marker.html",
+    "src/svg/marker": {
+        "url": "src/svg/marker.html",
         "dependencies": [
             "src/svg/elem"
         ]
     },
-    {
-        "name": "src/svg/filter",
-        "url": "/src/svg/filter.html",
+    "src/svg/filter": {
+        "url": "src/svg/filter.html",
         "dependencies": [
             "src/svg/elem"
         ]
     },
-    {
-        "name": "src/svg/text",
-        "url": "/src/svg/text.html",
+    "src/svg/text": {
+        "url": "src/svg/text.html",
         "dependencies": [
             "src/svg/elem",
             "src/svg/rect"
         ]
     },
-    {
-        "name": "src/svg/index",
-        "url": "/src/svg/index.html",
+    "src/svg/index": {
+        "url": "src/svg/index.html",
         "dependencies": []
     },
-    {
-        "name": "src/anim/animated",
-        "url": "/src/anim/animated.html",
+    "src/anim/animated": {
+        "url": "src/anim/animated.html",
         "dependencies": [
             "src/svg/elem",
             "src/svg/vector"
         ]
     },
-    {
-        "name": "src/anim/anim",
-        "url": "/src/anim/anim.html",
+    "src/anim/anim": {
+        "url": "src/anim/anim.html",
         "dependencies": [
             "src/svg/elem"
         ]
     },
-    {
-        "name": "src/anim/keyframe-anim",
-        "url": "/src/anim/keyframe-anim.html",
+    "src/anim/keyframe-anim": {
+        "url": "src/anim/keyframe-anim.html",
         "dependencies": [
             "src/svg/elem",
             "src/svg/vector",
@@ -76,17 +65,15 @@
             "src/anim/anim"
         ]
     },
-    {
-        "name": "src/anim/custom-anim",
-        "url": "/src/anim/custom-anim.html",
+    "src/anim/custom-anim": {
+        "url": "src/anim/custom-anim.html",
         "dependencies": [
             "src/svg/elem",
             "src/anim/anim"
         ]
     },
-    {
-        "name": "src/anim/animated-view",
-        "url": "/src/anim/animated-view.html",
+    "src/anim/animated-view": {
+        "url": "src/anim/animated-view.html",
         "dependencies": [
             "src/svg/rect",
             "src/svg/elem",
@@ -94,55 +81,39 @@
             "src/anim/keyframe-anim"
         ]
     },
-    {
-        "name": "src/anim/index",
-        "url": "/src/anim/index.html",
+    "src/anim/index": {
+        "url": "src/anim/index.html",
         "dependencies": []
     },
-    {
-        "name": "src/digraph/digraph",
-        "url": "/src/digraph/digraph.html",
-        "dependencies": [
-            "src/svg",
-            "dagre",
-            "src/digraph/digraph.less"
-        ]
-    },
-    {
-        "name": "src/svg",
-        "dependencies": []
-    },
-    {
-        "name": "dagre",
-        "dependencies": []
-    },
-    {
-        "name": "src/digraph/digraph.less",
-        "dependencies": []
-    },
-    {
-        "name": "src/file-diagram/file-diagram",
-        "url": "/src/file-diagram/file-diagram.html",
+    "src/digraph": {
+        "url": "src/digraph.html",
         "dependencies": [
             "src/svg",
             "src/anim",
-            "src/file-diagram/file-diagram.less"
+            "dagre"
         ]
     },
-    {
-        "name": "src/anim",
+    "src/svg": {
         "dependencies": []
     },
-    {
-        "name": "src/file-diagram/file-diagram.less",
+    "src/anim": {
         "dependencies": []
     },
-    {
-        "name": "src/index",
-        "url": "/src/index.html",
+    "dagre": {
+        "dependencies": []
+    },
+    "src/file-diagram": {
+        "url": "src/file-diagram.html",
+        "dependencies": [
+            "src/svg",
+            "src/anim"
+        ]
+    },
+    "src/index": {
+        "url": "src/index.html",
         "dependencies": [
             "src/svg",
             "src/anim"
         ]
     }
-]
+}
