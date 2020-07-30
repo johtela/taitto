@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/johtela/taitto#readme",
   "dependencies": {
-    "dagre": "^0.8.4"
+    "dagre": "^0.8.5"
   },
   "devDependencies": {
     "@types/css-font-loading-module": "0.0.2",
-    "@types/dagre": "^0.7.42"
+    "@types/dagre": "^0.7.44"
   },
   "peerDependencies": {
     "typescript": "^3.7.2"
