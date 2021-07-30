@@ -1,6 +1,6 @@
 {
   "name": "taitto",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "SVG drawing and layout library",
   "main": "lib/index.js",
   "scripts": {
