@@ -1,0 +1,103 @@
+/**
+# Customizing File Diagram Icons
+
+File icon shapes in SVG consist of multiple shapes with classes to allow 
+styling each part separately. To easily customize the colors of the icons we 
+define CSS variables that contain the color parameters.
+
+## Folder Icon Styles
+
+You can customizer the following colors for folder icons:
+
+- Folder color `--folder-color`
+- Folder dark side `--folder-dark-color`
+- Text/caption color `--folder-text-color`
+
+You can set the variables the mixin in context of a style class like this:
+```css
+    .red {
+        --folder-color: red;
+        --folder-dark-color: darkred;
+        --folder-text-color: black;
+    }
+```
+Now you can add `red` class to your folder icons to turn them red.
+```ts
+    taitto.folder(parent, "MyDir").addClass("red")
+```
+*/
+.folder-back {
+    fill: var(--folder-dark-color, hsl(60, 100%, 42%));
+}
+.folder-front {
+    fill: var(--folder-color, hsl(60, 100%, 47%));
+    stroke: var(--folder-dark-color, hsl(60, 100%, 42%));
+    stroke-width: 1px;
+}
+.folder-front text {
+    fill: var(--folder-text-color, hsl(60, 100%, 27%));
+}
+/**
+## Document Icon Styles
+
+Similarily to folder icons, you can customize the following properties for 
+document styles:
+
+- Document color `--document-color`
+- Document dark color `--document-dark-color`
+- Title color `--document-title-color`
+- Text/caption color `--document-text-color`
+- Optionally you can define the title text size with `--document-title-size`
+*/
+.document {
+    fill: var(--document-color, hsl(240, 100%, 99%));
+    stroke: var(--document-dark-color, hsl(240, 100%, 94%));
+    stroke-width: 1px;
+}
+.doc-bg {
+    fill: var(--document-title-color, hsl(216, 56%, 70%));
+    font-size: var(--document-title-size, 32px);
+}
+.doc-text {
+    fill: var(--document-text-color, hsl(240, 8%, 57%));
+}
+/**
+## Terminal Icon Styles
+
+Terminal icon has following customizable properties:
+
+- Background color `--terminal-back-color`
+- Titlebar color  `--terminal-title-color`
+- Border color `--terminal-border-color`
+- Title button color `--terminal-btn-color`
+- Color of the text inside terminal `--terminal-text-color`
+- Optional font size for terminal text `--terminal-text-size`
+*/
+.terminal {
+    stroke: var(--terminal-border-color, hsl(0, 0%, 50%));
+    fill: var(--terminal-back-color, hsl(0, 0%, 0%));
+}
+.terminal ellipse {
+    stroke: none;
+    fill: var(--terminal-btn-color, hsl(235, 86%, 67%));
+}
+.terminal-text {
+    fill: var(--terminal-text-color, hsl(124, 100%, 53%));
+    font-size: var(--terminal-text-size, 24px);
+}
+.title-bar {
+    stroke: none;
+    fill: var(--terminal-title-color, hsl(235, 86%, 47%));
+}
+/**
+## Default Styles
+*/
+.file-diagram text {
+    stroke: none;
+    font-family: Consolas, monospace;
+    font-size: 16px;
+    text-anchor: middle;
+}
+.file-diagram .container3D > * {
+    transform: perspective(100px);
+}
