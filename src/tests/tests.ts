@@ -1,7 +1,7 @@
 import * as tt from '..'
 // import * as lits from 'literatets/lib/visualizer'
 import * as scene from './scene'
-import "./test.less"
+import "./test.css"
 
 let arrow: tt.Arrow = { 
     closed: true,

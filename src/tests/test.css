@@ -1,0 +1,44 @@
+@import "../../styles/taitto.css";
+
+svg.digraph {
+    filter: drop-shadow( 4px 4px 4px #AAA);
+}
+svg.digraph .node:hover{
+    fill: white;
+    stroke: maroon;
+    stroke-dasharray: 4 4;
+    animation: dash-stream 1s linear infinite reverse;
+    cursor: pointer;
+}
+svg.digraph text {
+    fill: maroon;
+}
+@keyframes dash-stream {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: 8; }
+}
+
+svg.file-diagram {
+    filter: drop-shadow(2px 2px 4px #AAA);
+}
+svg.file-diagram .green {
+    --col: hsl(111, 56%, 88%);
+    --text: hsl(111, 36%, 48%);
+    --hl: hsl(111, 56%, 68%);
+    --document-color: var(--col);
+    --document-title-color: var(--hl);
+    --document-text-color: var(--text);
+    --folder-color: var(--col);
+    --folder-text-color: var(--text);
+}
+svg.file-diagram .caption, 
+svg.file-diagram .button {
+    text-anchor: start;
+    font-family: var(--sans-font);
+    font-size: 16px;
+}
+svg.file-diagram .button {
+    text-anchor: end;
+    cursor: pointer;
+    fill: #400;
+}
