@@ -148,8 +148,7 @@ export function terminal(parent: svg.GraphElem<SVGGraphicsElement>,
 export function fileDiagram(parent: HTMLElement, width: number, height: number):
     svg.GraphElem<SVGSVGElement> {
     let vb = new svg.Rect(0, 0, width, height)
-    let res = svg.create('svg', parent).addClass("file-diagram").attrs(
-        { width: vb.width, height: vb.height })
+    let res = svg.create('svg', parent).addClass("file-diagram")
     svg.setViewBox(res, vb)
     return res
 }
