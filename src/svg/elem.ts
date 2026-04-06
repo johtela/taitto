@@ -66,11 +66,11 @@ export class Elem<T extends SVGElement> {
         return this
     }
 
-    attr(name: string): string {
+    attr(name: string): string | null {
         return this.elem.getAttribute(name)
     }
 
-    attrs(obj: object, namespace: string = null) {
+    attrs(obj: Record<string, any>, namespace: string | null = null) {
         for (const key in obj)
             if (obj.hasOwnProperty(key)) {
                 let val = obj[key];
@@ -92,12 +92,12 @@ export class Elem<T extends SVGElement> {
     styles(obj: Partial<CSSStyleDeclaration>) {
         for (const key in obj)
             if (obj.hasOwnProperty(key))
-                this.elem.style[key] = obj[key]
+                this.elem.style[key] = obj[key]!
         return this
     }
 
     delete() {
-        this.elem.parentElement.removeChild(this.elem)
+        this.elem.parentElement?.removeChild(this.elem)
     }
 
     deleteChildren() {
@@ -111,12 +111,12 @@ export class Elem<T extends SVGElement> {
 
     moveToBack() {
         let parent = this.elem.parentElement
-        parent.insertBefore(this.elem, parent.children[0])
+        parent?.insertBefore(this.elem, parent.children[0])
         return this
     }
 
     moveToFront() {
-        this.elem.parentElement.appendChild(this.elem)
+        this.elem.parentElement?.appendChild(this.elem)
         return this
     }
 }
@@ -131,7 +131,7 @@ export class GraphElem<T extends SVGGraphicsElement> extends Elem<T> {
     }
 
     set transform(mat: SVGMatrix) {
-        let tr = this.elem.ownerSVGElement.createSVGTransformFromMatrix(mat)
+        let tr = this.elem.ownerSVGElement!.createSVGTransformFromMatrix(mat)
         this.elem.transform.baseVal.initialize(tr)
     }
 

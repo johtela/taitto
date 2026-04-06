@@ -4,18 +4,18 @@ let anim = tt.anim
 
 export class Scene {
     svgelem: tt.svg.GraphElem<SVGSVGElement>
-    view: tt.anim.AnimatedView
-    baseFolder: tt.anim.Animated
-    baseFoldInner: tt.FolderIcon
-    inputFiles: tt.anim.Animated[]
-    termInner: tt.TerminalIcon
-    term: tt.anim.Animated
-    caption: tt.svg.GraphElem<SVGTextElement>
-    nextBtn: tt.svg.GraphElem<SVGTextElement>
-    nextAnim: tt.anim.KeyframeAnim
-    outFolder: tt.anim.Animated
-    outFoldInner: tt.FolderIcon
-    outputFiles: tt.anim.Animated[]
+    view!: tt.anim.AnimatedView
+    baseFolder!: tt.anim.Animated
+    baseFoldInner!: tt.FolderIcon
+    inputFiles!: tt.anim.Animated[]
+    termInner!: tt.TerminalIcon
+    term!: tt.anim.Animated
+    caption!: tt.svg.GraphElem<SVGTextElement>
+    nextBtn!: tt.svg.GraphElem<SVGTextElement>
+    nextAnim!: tt.anim.KeyframeAnim
+    outFolder!: tt.anim.Animated
+    outFoldInner!: tt.FolderIcon
+    outputFiles!: tt.anim.Animated[]
     outputPos: tt.svg.Vector = [850, 200]
 
     constructor(parent: HTMLElement) {

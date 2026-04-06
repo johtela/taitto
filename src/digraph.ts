@@ -133,7 +133,7 @@ function defineDigraph(digraph: Digraph, svgroot: svg.GraphElem<SVGSVGElement>,
     viewport: svg.GraphElem<SVGGElement>, dg: dagre.graphlib.Graph) {
     digraph.nodes.forEach(node => {
         drawNode(node, viewport, digraph.nodeMargin)
-        let bbox = node.elem.bbox
+        let bbox = node.elem!.bbox
         dg.setNode(node.name, {
             label: node.label,
             width: bbox.width,
@@ -143,7 +143,7 @@ function defineDigraph(digraph: Digraph, svgroot: svg.GraphElem<SVGSVGElement>,
     digraph.edges.forEach(edge => {
         if (edge.label) {
             drawEdgeLabel(edge, viewport)
-            let { width, height } = edge.elem.bbox
+            let { width, height } = edge.elem!.bbox
             dg.setEdge(edge.source.name, edge.destination.name, {
                 label: edge.label,
                 labelpos: digraph.edgeLabelPos || 'r',
@@ -159,13 +159,13 @@ function layoutDigraph(digraph: Digraph, svgroot: svg.GraphElem<SVGSVGElement>,
     viewport: svg.GraphElem<SVGGElement>, dg: dagre.graphlib.Graph) {
     digraph.nodes.forEach(node => {
         let dn = dg.node(node.name)
-        let e = node.elem
+        let e = node.elem!
         e.transform = e.transform.translate(dn.x, dn.y)
     })
     digraph.edges.forEach(edge => {
         let de = dg.edge(edge.source.name, edge.destination.name)
-        drawEdge(de, svgroot, viewport, edge.arrow, digraph.curvedEdges,
-            digraph.ranksep || defaultRanksep)
+        drawEdge(de, svgroot, viewport, edge.arrow!, 
+            digraph.curvedEdges || false, digraph.ranksep || defaultRanksep)
         let e = edge.elem
         if (e)
             e.transform = e.transform.translate(de.x, de.y)
@@ -196,13 +196,13 @@ const zoomSpeed = 300
 
 function zoomInOut(svgroot: svg.GraphElem<SVGSVGElement>,
     viewport: anim.AnimatedView, event: MouseEvent) {
-    let zoomAnim: anim.KeyframeAnim = null
+    let zoomAnim: anim.KeyframeAnim | null = null
     if (!zoomed) {
         let s = svgroot.element
         let pt = s.createSVGPoint()
         pt.x = event.clientX
         pt.y = event.clientY
-        let { x, y } = pt.matrixTransform(s.getScreenCTM().inverse())
+        let { x, y } = pt.matrixTransform(s.getScreenCTM()!.inverse())
         zoomAnim = viewport.zoomFactor(2, x, y, zoomSpeed)
     }
     else
@@ -213,7 +213,7 @@ function zoomInOut(svgroot: svg.GraphElem<SVGSVGElement>,
 }
 
 export function digraph(dg: Digraph, parent: HTMLElement) {
-    let svgroot: svg.GraphElem<SVGSVGElement> = null
+    let svgroot: svg.GraphElem<SVGSVGElement> | null = null
     if (!document.fonts || document.fonts.status == "loaded")
         svgroot = createDigraph(dg, parent)
     else

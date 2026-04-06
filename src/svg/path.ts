@@ -85,7 +85,7 @@ export class ArcTo {
 }
 
 export class ClosePath {
-    readonly command: 'Z'
+    readonly command: 'Z' = 'Z'
     toString = () => this.command
 }
 

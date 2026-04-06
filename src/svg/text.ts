@@ -21,7 +21,7 @@ export function changeWordWrapText(text: el.GraphElem<SVGTextElement>,
     else
         wrapAfter = Number(text.attr("data-wrapAfter") || 100)
     let i = 0
-    let bb: rt.Rect = null
+    let bb: rt.Rect | null = null
     while (i < words.length) {
         let ts = el.tspan(text, words[i])
         let w = ts.element.getComputedTextLength()

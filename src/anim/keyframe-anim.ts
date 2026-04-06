@@ -4,7 +4,7 @@ import * as ad from './animated'
 import * as an from './anim'
 
 export class KeyframeAnim extends an.Anim {
-    protected stopEvent: string
+    protected stopEvent?: string
 
     constructor(
         target: el.Elem<SVGElement>,
